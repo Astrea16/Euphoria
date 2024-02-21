@@ -1,0 +1,117 @@
+.product {
+  // .product__main
+  &__main {
+  }
+}
+.main-product {
+  // .main-product__container
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  // .main-product__images
+  &__images {
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    gap: toRem(34);
+    position: relative;
+    &::before {
+      content: "";
+      width: 100vw;
+      height: 100%;
+      background-color: #f6f6f6;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+  // .main-product__slider
+  &__slider {
+    flex: 1 1 auto;
+  }
+  // .main-product__wrapper
+  &__wrapper {
+  }
+  // .main-product__slide
+  &__slide {
+  }
+  // .main-product__image
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  // .main-product__body
+  &__body {
+    @include adaptiveValue("padding-left", 74, 15, 2, $containerWidth, 767.98);
+    padding-top: toRem(30);
+  }
+  // .main-product__thumb-slider
+  &__thumb-slider {
+    padding-top: toRem(25);
+    padding-bottom: toRem(25);
+    flex: 0 0 toRem(75);
+  }
+}
+
+.thumb-slider {
+  display: grid;
+  justify-items: center;
+  gap: toRem(20);
+  // .thumb-slider__wrapper
+  &__slider {
+    height: toRem(265);
+  }
+  // .thumb-slider__wrapper
+  &__wrapper {
+  }
+  // .thumb-slider__slide
+  &__slide.swiper-slide {
+    border-radius: toRem(10);
+    padding: toRem(5);
+    cursor: pointer;
+    border: toRem(1) solid transparent;
+    &.swiper-slide-thumb-active {
+      border: toRem(1) solid $dark;
+    }
+  }
+  &__image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    border-radius: toRem(10);
+  }
+  &__arrows {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    gap: toRem(10);
+  }
+  // .thumb-slider__arrow
+  &__arrow {
+    width: toRem(21);
+    height: toRem(21);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: toRem(6);
+    box-shadow: toRem(0.75) toRem(0.75) toRem(3) 0 rgba(0, 0, 0, 0.4);
+    color: $dark;
+    transition: all 0.3s;
+    background-color: #fff;
+    @media (any-hover: hover) {
+      &:hover {
+        background-color: $dark;
+        color: #fff;
+      }
+    }
+    // .thumb-slider__arrow--up
+    &--up {
+    }
+    // .thumb-slider__arrow--down
+    &--down {
+    }
+  }
+}

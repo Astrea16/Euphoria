@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Catalog</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html">
+					<img class="header__logo" src="img/header/logo.svg" alt="logo">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__link">Shop</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Men</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link  menu__link--active">Women</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Combos</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Joggers</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<form action="#" class="header__search search-form">
+					<input class="search-form__input" type="text" name="search">
+					<button class="search-form__button _icon-search"></button>
+				</form>
+				<div class="header__action action-header">
+					<a href="#" class="action-header__item _icon-favorit"></a>
+					<a href="#" class="action-header__item _icon-user"></a>
+					<a href="#" class="action-header__item _icon-cart"></a>
+				</div>
+				<button class="icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__catalog catalog">
+				<section class="catalog__main">
+					<div class="catalog__container">
+						<aside class="catalog__filter filter">
+							<h4 data-spoller="open" data-spoller-media="max, 997.98" class="filter__title title-filter">
+								<button type="button" class="title-filter__button  title-filter__button--first _icon-filter">Filter</button>
+							</h4>
+							<form action="#" class="filter__body">
+								<div class="filter__section section-filter">
+									<div class="section-filter__body">
+										<nav class="section-filter__menu menu-filter">
+											<ul class="menu-filter__list">
+												<li class="menu-filter__item">
+													<a href="#" class="menu-filter__link menu-filter__link--active _icon-ch-right">Tops</a>
+												</li>
+												<li class="menu-filter__item">
+													<a href="#" class="menu-filter__link _icon-ch-right">Printed T-shirts</a>
+												</li>
+												<li class="menu-filter__item">
+													<a href="#" class="menu-filter__link _icon-ch-right">Plain T-shirts</a>
+												</li>
+												<li class="menu-filter__item">
+													<a href="#" class="menu-filter__link _icon-ch-right">Kurti</a>
+												</li>
+												<li class="menu-filter__item">
+													<a href="#" class="menu-filter__link _icon-ch-right">Boxers</a>
+												</li>
+												<li class="menu-filter__item">
+													<a href="#" class="menu-filter__link _icon-ch-right">Full sleeve T-shirts</a>
+												</li>
+												<li class="menu-filter__item">
+													<a href="#" class="menu-filter__link _icon-ch-right">Joggers</a>
+												</li>
+												<li class="menu-filter__item">
+													<a href="#" class="menu-filter__link _icon-ch-right">Payjamas</a>
+												</li>
+												<li class="menu-filter__item">
+													<a href="#" class="menu-filter__link _icon-ch-right">Jeans</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</div>
+								<div class="filter__section section-filter">
+									<h5 data-spoller="open" class="section-filter__title title-filter">
+										<button type="button" class="title-filter__button   _icon-ch-down">Price</button>
+									</h5>
+									<div class="section-filter__body">
+										<div class="section-filter__price price-filter">
+											<div class="price-filter__range"></div>
+											<div class="price-filter__impunts">
+												<input type="text" name="price-from" class="price-filter__input price-filter__input--from">
+												<input type="text" name="price-to" class="price-filter__input price-filter__input--to">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="filter__section section-filter">
+									<h5 data-spoller="open" class="section-filter__title title-filter">
+										<button type="button" class="title-filter__button   _icon-ch-down">Colors</button>
+									</h5>
+									<div class="section-filter__body">
+										<div class="section-filter__colors colors-filter">
+											<label style="--color:#8434e1" class="colors-filter__item">
+												<input class="colors-filter__input" type="checkbox" name="color[]">
+												Purple
+											</label>
+											<label style="--color:#252525" class="colors-filter__item">
+												<input class="colors-filter__input" type="checkbox" name="color[]">
+												Black
+											</label>
+											<label style="--color:#ff0000" class="colors-filter__item">
+												<input class="colors-filter__input" type="checkbox" name="color[]">
+												Red
+											</label>
+											<label style=" --color:#f16f2b" class="colors-filter__item">
+												<input class="colors-filter__input" type="checkbox" name="color[]">
+												Oringe
+											</label>
+											<label style="--color:#345eff" class="colors-filter__item">
+												<input class="colors-filter__input" type="checkbox" name="color[]">
+												Navy
+											</label>
+											<label style="--color:#fff" class="colors-filter__item colors-filter__item--white">
+												<input class="colors-filter__input" type="checkbox" name="color[]">
+												White
+											</label>
+											<label style="--color:#d67e3b" class="colors-filter__item">
+												<input class="colors-filter__input" type="checkbox" name="color[]">
+												Brown
+											</label>
+											<label style="--color:#48bc4e" class="colors-filter__item">
+												<input class="colors-filter__input" type="checkbox" name="color[]">
+												Green
+											</label>
+											<label style="--color: #fdc761" class="colors-filter__item">
+												<input class="colors-filter__input" type="checkbox" name="color[]">
+												Yellow
+											</label>
+											<label style="--color: #e4e5e8" class="colors-filter__item">
+												<input class="colors-filter__input" type="checkbox" name="color[]">
+												Gray
+											</label>
+											<label style="--color: #e08d9d" class="colors-filter__item">
+												<input class="colors-filter__input" type="checkbox" name="color[]">
+												Pink
+											</label> <label style="--color:#3fdeff" class="colors-filter__item">
+												<input class="colors-filter__input" type="checkbox" name="color[]">
+												Blue
+											</label>
+										</div>
+									</div>
+								</div>
+								<div class="filter__section section-filter">
+									<h5 data-spoller="open" class="section-filter__title title-filter">
+										<button type="button" class="title-filter__button   _icon-ch-down">Size</button>
+									</h5>
+									<div class="section-filter__body">
+										<div class="section-filter__size size-filter">
+											<label class="size-filter__item">
+												<input class="size-filter__input" type="checkbox" name="size[]">
+												XXS
+											</label>
+											<label class="size-filter__item">
+												<input class="size-filter__input" type="checkbox" name="size[]">
+												XL
+											</label>
+											<label class="size-filter__item">
+												<input class="size-filter__input" type="checkbox" name="size[]">
+												XS
+											</label>
+											<label class="size-filter__item">
+												<input class="size-filter__input" type="checkbox" name="size[]">
+												S
+											</label>
+											<label class="size-filter__item">
+												<input class="size-filter__input" type="checkbox" name="size[]">
+												M
+											</label>
+											<label class="size-filter__item ">
+												<input class="size-filter__input" type="checkbox" name="size[]">
+												L
+											</label>
+											<label class="size-filter__item">
+												<input class="size-filter__input" type="checkbox" name="size[]">
+												XXL
+											</label>
+											<label class="size-filter__item">
+												<input class="size-filter__input" type="checkbox" name="size[]">
+												3XL
+											</label>
+											<label class="size-filter__item">
+												<input class="size-filter__input" type="checkbox" name="size[]">
+												4XL
+											</label>
+
+										</div>
+									</div>
+								</div>
+								<div class="filter__section section-filter">
+									<h5 data-spoller="open" class="section-filter__title title-filter">
+										<button type="button" class="title-filter__button   _icon-ch-down">Dress Style</button>
+									</h5>
+									<div class="section-filter__body">
+										<div class="section-filter__style style-filter">
+											<label class="style-filter__item _icon-ch-right">
+												<input class="style-filter__input" type="checkbox" name="style[]">
+												Classic
+											</label>
+											<label class="style-filter__item _icon-ch-right">
+												<input class="style-filter__input" type="checkbox" name="style[]">
+												Casual
+											</label>
+											<label class="style-filter__item _icon-ch-right">
+												<input class="style-filter__input" type="checkbox" name="style[]">
+												Business
+											</label>
+											<label class="style-filter__item _icon-ch-right">
+												<input class="style-filter__input" type="checkbox" name="style[]">
+												Sport
+											</label>
+											<label class="style-filter__item _icon-ch-right">
+												<input class="style-filter__input" type="checkbox" name="style[]">
+												Elegant
+											</label>
+											<label class="style-filter__item  _icon-ch-right">
+												<input class="style-filter__input" type="checkbox" name="style[]">
+												Formal (evening)
+											</label>
+										</div>
+									</div>
+								</div>
+							</form>
+						</aside>
+						<div class="catalog__body">
+							<div class="catalog__header">
+								<h1 class="catalog__title">Women’s Clothing</h1>
+								<ul class="catalog__type type-catalog">
+									<li class="type-catalog__item">
+										<button class="type-catalog__button type-catalog__button--active">New</button>
+									</li>
+									<li class="type-catalog__item">
+										<button class="type-catalog__button">Recommended</button>
+									</li>
+								</ul>
+							</div>
+							<div class="catalog__items"></div>
+						</div>
+					</div>
+				</section>
+				<section class="catalog__description description-catalog">
+					<div class="description-catalog__container">
+						<h2 class="description-catalog__title title">
+							Clothing for Women Online in India
+						</h2>
+						<div class="description-catalog__body">
+							<h3> Reexplore Women's Clothing Collection Online at Euphoria</h3>
+							<p>Women's Clothing – Are you searching for the best website to buy Clothing for Women online in India? Well, your search for the coolest and most stylish womens clothing ends here. From trendy Casual Womens Wear Online shopping to premium quality cotton women's apparel,<strong> Euphoria</strong> has closet of Women Collection covered with the latest and best designs of Women's Clothing Online.</p>
+							<p>Our collection of clothes for women will make you the trendsetter with an iconic resemblance of choice in Womens Wear. </p>
+							<h3>One-Stop Destination to Shop Every Clothing for Women: Euphoria</h3>
+							<p>Today, Clothing for Women is gaining more popularity above all. This is because gone are the days when women were used to carrying uncomfortable fashion. Today, a lady looks prettier when she is in Casual Womens Wear which is a comfortable outfit. Concerning this, <strong>Euphoria</strong> has a big fat range of Stylish Women's Clothing that would make her the winner wherever she goes. </p>
+							<p>
+								Our collection of clothes for women will make you the trendsetter with an iconic resemblance of choice in Womens Wear. It is quite evident to say that there are very few Womens Clothing online stores where you can buy Western Wear for Women comprising the premium material and elegant design that you are always seeking for. Basically,
+							</p>
+						</div>
+						<a href="" class="description-catalog__see-more">See More</a>
+					</div>
+				</section>
+				<section class="catalog__best-price price-best">
+					<div class="price-best__container">
+						<h2 class="price-best__title title">Buy Women's Clothing at Best Price</h2>
+						<div class="price-best__table">
+							<table class="table-price-best">
+								<tr>
+									<th>Women's Clothing</th>
+									<th>Best Price</th>
+								</tr>
+								<tr>
+									<td>Pick Any 4- Womens Plain T-shirt Combo</td>
+									<td>₹1099</td>
+								</tr>
+								<tr>
+									<td>Pick Any 4- Plain Womens Boxer Combo</td>
+									<td>₹1099</td>
+								</tr>
+								<tr>
+									<td>Multicolor Checkered Long Casual Shirts for Women</td>
+									<td>₹799</td>
+								</tr>
+								<tr>
+									<td>Pick Any 2: Plain Boxy Casual Shirts for Women Combo</td>
+									<td>₹799</td>
+								</tr>
+								<tr>
+									<td>Blue Floral Anarkali Kurti</td>
+									<td>₹599</td>
+								</tr>
+								<tr>
+									<td>Jade Black Narrow Cut Flexible Women Jeggings</td>
+									<td>₹998</td>
+								</tr>
+								<tr>
+									<td>Mustard-yellow Solid Straight-Fit Women Pant</td>
+									<td>₹499</td>
+								</tr>
+								<tr>
+									<td>Women Pants Combo - Pick Any 2</td>
+									<td>₹800</td>
+								</tr>
+								<tr>
+									<td>Pista Green Solid Boxy Casual Shirts for Women</td>
+									<td>₹449</td>
+								</tr>
+								<tr>
+									<td> Plain Burgundy Womens Boxer</td>
+									<td>₹349</td>
+								</tr>
+								<tr>
+									<td>Striped Front Tie Casual Shirts for Women</td>
+									<td>₹449</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div class="footer__menu menu-footer">
+					<div class="menu-footer__block">
+						<h5 class="menu-footer__title">Need Help</h5>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Contact Us</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Track Order</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Returns & Refunds</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">FAQ's</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Career</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-footer__block">
+						<h5 class="menu-footer__title">Company</h5>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">About Us</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Euphoria Blog</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Euphoriastan</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Collaboration</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Media</a>
+							</li>
+						</ul>
+					</div>
+					<div class="menu-footer__block">
+						<h5 class="menu-footer__title"> More Info</h5>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Term and Conditions</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Privacy Policy</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Shipping Policy</a>
+							</li>
+							<li class="menu-footer__item">
+								<a href="#" class="menu-footer__link">Sitemap</a>
+							</li>
+
+						</ul>
+					</div>
+					<div class="menu-footer__block">
+						<h5 class="menu-footer__title"> Location</h5>
+						<ul class="menu-footer__list">
+							<li class="menu-footer__item">
+								<a href="mailto:support@euphoria.in" class="menu-footer__link">support@euphoria.in</a>
+							</li>
+							<li class="menu-footer__item">
+								Eklingpura Chouraha, Ahmedabad Main Road
+							</li>
+							<li class="menu-footer__item">
+								(NH 8- Near Mahadev Hotel) Udaipur, India- 313002
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__body">
+					<div class="footer__social social-footer">
+						<ul class="social-footer__list">
+							<li class="social-footer__item"><a href="#" target="_blank" class="social-footer__link _icon-s-facebook"></a>
+							</li>
+							<li class="social-footer__item">
+								<a href="#" target="_blank" class="social-footer__link _icon-s-instagram"></a>
+							</li>
+							<li class="social-footer__item">
+								<a href="#" target="_blank" class="social-footer__link _icon-s-twitter"></a>
+							</li>
+							<li class="social-footer__item">
+								<a href="#" target="_blank" class="social-footer__link _icon-s-linkedin"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__download download-apps">
+						<h5 class="download-apps__title">Download The App</h5>
+						<div class="download-apps__items">
+							<a href="#" target="_blank" class="download-apps__link">
+								<img src="img/footer/google_play.svg" alt="Google play">
+							</a>
+							<a href="#" target="_blank" class="download-apps__link">
+								<img src="img/footer/app_story.svg" alt="Apple story">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer__categories popylar-categories">
+					<h5 data-spoller class="popylar-categories__title  ">
+						<button class="popylar-categories__button-title _icon-ch-down">Popular Categories</button>
+					</h5>
+					<div class="popylar-categories__body">
+						<ul class="popylar-categories__list">
+							<li class="popylar-categories__item">
+								<a href="#" class="popylar-categories__link">Men</a>
+							</li>
+							<li class="popylar-categories__item">
+								<a href="#" class="popylar-categories__link">Women</a>
+							</li>
+							<li class="popylar-categories__item">
+								<a href="#" class="popylar-categories__link">Joggers</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__copy">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</div>
+			</div>
+		</footer>
+	</div>
+
+	<!--  Форматування -->
+	<script src="js/wNumb.min.js"></script>
+	<!-- Підключення noUiSlider -->
+	<script src="js/nouislider.min.js"></script>
+	<!-- Підключення JS-файлу з кодом -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>

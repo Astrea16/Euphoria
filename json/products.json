@@ -1,0 +1,112 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "favorite": true,
+      "url": "product.html",
+      "image": "img/popular/sweatshirt_black.webp",
+      "title": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, soluta.",
+      "label": "Explore Now!",
+      "price": "$37.00"
+    },
+    {
+      "id": 2,
+      "favorite": false,
+      "url": "product.html",
+      "image": "img/popular/sweatshirt_black.webp",
+      "title": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, soluta.",
+      "label": "Explore Now!",
+      "price": "$70.00"
+    },
+    {
+      "id": 3,
+      "favorite": false,
+      "url": "product.html",
+      "image": "img/popular/shorts_black.webp",
+      "title": "Black Shorts",
+      "label": "MM’s  Brand",
+      "price": "$110.00"
+    },
+    {
+      "id": 4,
+      "favorite": false,
+      "url": "product.html",
+      "image": "img/popular/hoodie_levender.webp",
+      "title": "Levender Hoodie with ...",
+      "label": "Helen’s  Brand",
+      "price": "$110.00"
+    },
+    {
+      "id": 5,
+      "favorite": false,
+      "url": "product.html",
+      "image": "img/wumen/hoodies.webp",
+      "title": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, soluta.",
+      "label": "Explore Now!",
+      "price": "$95.00"
+    },
+    {
+      "id": 6,
+      "favorite": false,
+      "url": "product.html",
+      "image": "img/wumen/coats.webp",
+      "title": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, soluta.",
+      "label": "Explore Now!",
+      "price": "$80.00"
+    },
+    {
+      "id": 7,
+      "favorite": false,
+      "url": "product.html",
+      "image": "img/wumen/tees.webp",
+      "title": "Blue Flower Print Crop ....",
+      "label": "Mellon’s  Brand",
+      "price": "$35.00"
+    },
+    {
+      "id": 8,
+      "favorite": false,
+      "url": "product.html",
+      "image": "img/wumen/boxers.webp",
+      "title": "White T-shirt",
+      "label": "Helen’s  Brand",
+      "price": "$35.00"
+    },
+    {
+      "id": 9,
+      "favorite": false,
+      "url": "product.html",
+      "image": "img/catalog/img-1.jpg",
+      "title": "White T-shirt",
+      "label": "Helen’s  Brand",
+      "price": "$45.00"
+    },
+    {
+      "id": 10,
+      "favorite": false,
+      "url": "product.html",
+      "image": "img/catalog/img-2.jpg",
+      "title": "White T-shirt",
+      "label": "Helen’s  Brand",
+      "price": "$60.00"
+    },
+    {
+      "id": 11,
+      "favorite": false,
+      "url": "product.html",
+      "image": "img/catalog/img-3.jpg",
+      "title": "White T-shirt",
+      "label": "Helen’s  Brand",
+      "price": "$20.00"
+    },
+    {
+      "id": 12,
+      "favorite": false,
+      "url": "product.html",
+      "image": "img/catalog/img-4.jpg",
+      "title": "White T-shirt",
+      "label": "Helen’s  Brand",
+      "price": "$135.00"
+    }
+  ]
+}

@@ -1,0 +1,282 @@
+//Заголовки
+.title {
+  @extend %secondFont;
+  font-weight: 600;
+  color: $dark;
+  letter-spacing: toRem(0.68);
+  @include adaptiveValue("font-size", 36, 24);
+  line-height: 1.1;
+  display: flex;
+  column-gap: toEm(20, 36);
+  align-items: flex-start;
+  text-transform: capitalize;
+  &::before {
+    content: "";
+    background-color: $violet;
+    flex: 0 0 toRem(6);
+    width: toRem(6);
+    height: toEm(30, 36);
+    border-radius: toRem(10);
+    margin-top: toEm(5, 36);
+  }
+  &--margin:not(:last-child) {
+    @include adaptiveValue("margin-bottom", 70, 20);
+  }
+}
+.common {
+  margin-bottom: toRem(100);
+}
+/*===============================================================================================*/
+//Previw card
+
+.item-product {
+  display: grid;
+  gap: toRem(30);
+  position: relative;
+  //.item-product--category
+  &--category {
+    gap: toRem(25);
+  }
+  //.item-product__favorite{
+  &__favorite {
+    position: absolute;
+    top: toRem(27);
+    right: toRem(21);
+    width: toRem(32);
+    height: toRem(32);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+    color: $dark;
+    transition: all 0.3s;
+    &--active {
+      color: #ff0000;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        transform: scale(1.1);
+        color: #ff0000;
+      }
+    }
+  }
+  // .item-product__picture-link
+  &__picture-link {
+    display: block;
+    border-radius: toRem(10);
+    overflow: hidden;
+  }
+  //.item-product__image
+  &__image {
+    aspect-ratio: 282 / 370;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: toRem(10);
+    .item-product--category & {
+      aspect-ratio: 270 / 393;
+    }
+  }
+  // .item-product__body
+  &__body {
+    display: grid;
+    grid-template: auto auto / 1fr auto;
+    column-gap: toRem(35);
+    row-gap: toRem(3);
+  }
+  // .item-product__title
+  &__title {
+    min-width: 0;
+    font-weight: 600;
+    color: $dark;
+    .item-product--category & {
+      font-size: toRem(17);
+      font-weight: 700;
+    }
+  }
+  // .item-product__link-title
+  &__link-title {
+    align-items: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    @media (any-hover: hover) {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  // .item-product__label
+  &__label {
+    grid-row: 2 / 3;
+    font-size: toRem(14);
+    font-weight: 500;
+  }
+
+  &__link,
+  &__price {
+    grid-column: 2 / 3;
+    grid-row: span 2;
+  }
+  // .item-product__link
+  &__link {
+    display: flex;
+    align-items: center;
+    &::before {
+      transition: color 0.3s;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+  //.item-product__price
+  &__price {
+    align-self: center;
+    border-radius: toRem(8);
+    background-color: $litegray;
+    padding: toRem(10) toRem(20);
+    font-weight: 700;
+    font-size: toRem(14);
+  }
+}
+
+/*===============================================================================================*/
+//button
+.button {
+  @extend %mainFont;
+  background-color: $violet;
+  padding: toRem(16) toRem(20);
+  display: inline-block;
+  font-size: toRem(18);
+  color: $white;
+  border-radius: toRem(8);
+  line-height: 1.22;
+  text-align: center;
+  transition: all 0.3s;
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: #6620c1;
+      box-shadow: 0px toRem(3) toRem(4) 0px rgba(0, 0, 0, 0.1);
+    }
+    &:focus {
+      background-color: #6620c1;
+    }
+    &:disabled {
+      cursor: default;
+      background-color: #eaeaea;
+      color: #807d7e;
+    }
+  }
+  //.button--border
+  &--border {
+    color: $dark;
+    background-color: $white;
+    border: toRem(1) solid $dark;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $violet;
+        background-color: $white;
+        box-shadow: none;
+      }
+      &:focus {
+        border-color: $violet;
+      }
+      &:disabled {
+        cursor: default;
+        background-color: #eaeaea;
+        color: #807d7e;
+      }
+    }
+  }
+  //.botton--white
+  &--white {
+    background-color: $white;
+    color: $dark;
+    @media (any-hover: hover) {
+      &:hover {
+        color: $white;
+        background-color: $violet;
+        box-shadow: 0px toRem(3) toRem(4) 0px rgba(0, 0, 0, 0.1);
+      }
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+/*===============================================================================================*/
+// Rating
+.rating {
+  display: inline-block;
+  // .rating__items
+  &__items {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: toRem(7);
+    height: toRem(20);
+    .rating--set & {
+      @media (any-hover: hover) {
+        &:hover {
+          .rating__item {
+            background: url("../img/icons/star-active.svg") 0 0 / toRem(20) no-repeat;
+          }
+        }
+      }
+    }
+  }
+  // .rating__item
+  &__item {
+    flex: 0 0 toRem(20);
+    width: toRem(20);
+    position: relative;
+    background: url("../img/icons/star.svg") 0 0 / toRem(20) no-repeat;
+    &.active {
+      background: url("../img/icons/star-active.svg") 0 0 / toRem(20) no-repeat;
+    }
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: toRem(20);
+      background: url("../img/icons/star-active.svg") 0 0 / toRem(20) no-repeat;
+    }
+    &:not(:last-child) {
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: toRem(7);
+        transform: translateX(100%);
+      }
+    }
+    .rating--set & {
+      @media (any-hover: hover) {
+        &:hover {
+          ~ .rating__item {
+            background: url("../img/icons/star.svg") 0 0 / toRem(20) no-repeat;
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  // .rating__input
+  &__input {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    opacity: 0;
+    .rating--set & {
+      cursor: pointer;
+    }
+  }
+}
