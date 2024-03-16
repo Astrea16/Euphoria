@@ -232,6 +232,9 @@
   // .form-sign-in__button
   &__button {
     min-width: toRem(167);
+    @media (max-width: toEm(479.98)) {
+      width: 100%;
+    }
   }
   //.form-sign-in__error
   &__error {

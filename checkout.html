@@ -136,36 +136,36 @@
 							<form action="#" class="forms-checkout__form-billing form-billing">
 								<div class="form-billing__line">
 									<label for="name" class="form-billing__label">First Name*</label>
-									<input type="text" class="form-billing__input" name="name" id="name" autocomplete="off" placeholder="First Name">
+									<input type="text" class="form-billing__input" name="name" id="name" autocomplete="off" placeholder="First Name" required>
 								</div>
 								<div class="form-billing__line">
 									<label for="last" class="form-billing__label">Last Name*</label>
-									<input type="text" class="form-billing__input" name="last" id="last" autocomplete="off" placeholder="Last Name">
+									<input type="text" class="form-billing__input" name="last" id="last" autocomplete="off" placeholder="Last Name" required>
 								</div>
 								<div class="form-billing__line">
 									<label for="country" class="form-billing__label">Country / Region*</label>
-									<input type="text" class="form-billing__input" name="country" id="country" autocomplete="off" placeholder="Country / Region">
+									<input type="text" class="form-billing__input" name="country" id="country" autocomplete="off" placeholder="Country / Region" required>
 								</div>
 								<div class="form-billing__line">
 									<label for="company" class="form-billing__label">Company Name</label>
-									<input type="text" class="form-billing__input" name="company" id="company" autocomplete="off" placeholder="Company Name">
+									<input type="text" class="form-billing__input" name="company" id="company" autocomplete="off" placeholder="Company Name" required>
 								</div>
 								<div class="form-billing__line">
 									<label for="address" class="form-billing__label">Street Address*</label>
-									<input type="text" class="form-billing__input" name="address" id="address" autocomplete="off" placeholder="House number and street name">
+									<input type="text" class="form-billing__input" name="address" id="address" autocomplete="off" placeholder="House number and street name" required>
 								</div>
 								<div class="form-billing__line">
 									<label for="apt" class="form-billing__label">Apt, suite, unit</label>
-									<input type="text" class="form-billing__input" name="apt" id="apt" autocomplete="off" placeholder="apartment, suite, unit, etc. (optional)">
+									<input type="text" class="form-billing__input" name="apt" id="apt" autocomplete="off" placeholder="apartment, suite, unit, etc. (optional)" required>
 								</div>
 								<div class="form-billing__line form-billing__line--big">
 									<div class="form-billing__item">
 										<label for="toun" class="form-billing__label">City*</label>
-										<input class="form-billing__input" type="text" name="toun" id="toun" autocomplete="off" placeholder="Town / City">
+										<input class="form-billing__input" type="text" name="toun" id="toun" autocomplete="off" placeholder="Town / City" required>
 									</div>
 									<div class="form-billing__item">
 										<label for="state" class="form-billing__label">State*</label>
-										<select class="form-billing__select select-form" name="state" id="state" required="">
+										<select class="form-billing__select select-form" name="state" id="state" required>
 											<option value disabled selected>State</option>
 											<option value="alabama">Alabama</option>
 											<option value="hawaii">Hawaii</option>
@@ -174,17 +174,17 @@
 									</div>
 									<div class="form-billing__item">
 										<label for="postal" class="form-billing__label">Postal Code*</label>
-										<input class="form-billing__input" type="number" name="postal" id="postal" autocomplete="off" placeholder="Postal Code">
+										<input class="form-billing__input" type="number" name="postal" id="postal" autocomplete="off" placeholder="Postal Code" required>
 									</div>
 								</div>
 								<div class="form-billing__line">
 									<label for="tel" class="form-billing__label">Phone*</label>
-									<input type="number" class="form-billing__input" name="tel" id="tel" autocomplete="off" placeholder="Phone">
+									<input type="number" class="form-billing__input" name="tel" id="tel" autocomplete="off" placeholder="Phone" required>
 								</div>
 								<div class="form-billing__line form-billing__line--button">
 									<button class="form-billing__button button">Continue to delivery</button>
 									<div class="form-billing__checkbox checkbox">
-										<input class="checkbox__check" type="checkbox" name="checkbox" id="check">
+										<input class="checkbox__check" type="checkbox" name="checkbox" id="check" required>
 										<label for="check">Save my information for a faster checkout</label>
 									</div>
 								</div>

@@ -7382,6 +7382,11 @@ body.menu-open {
 .form-sign-in__button {
   min-width: 10.4375rem;
 }
+@media (max-width: 29.99875em) {
+  .form-sign-in__button {
+    width: 100%;
+  }
+}
 .form-sign-in__error {
   color: #ff0000;
 }
