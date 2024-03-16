@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Euphoria.Checkout</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<a href="index.html">
+					<img class="header__logo" src="img/header/logo.svg" alt="logo">
+				</a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item">
+								<a href="#" class="menu__link">Shop</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Men</a>
+							</li>
+							<li class="menu__item">
+								<a href="catalog.html" class="menu__link">Women</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Combos</a>
+							</li>
+							<li class="menu__item">
+								<a href="#" class="menu__link">Joggers</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<form action="#" class="header__search search-form">
+					<input class="search-form__input" type="text" name="search" placeholder="search">
+					<button class="search-form__button _icon-search"></button>
+				</form>
+				<div class="header__action action-header">
+					<a href="#" class="action-header__item _icon-favorit"></a>
+					<a href="#" class="action-header__item _icon-user"></a>
+					<a href="#" class="action-header__item action-header__item--active  _icon-cart"></a>
+				</div>
+				<button class="icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+			<div class="page__checkout checkout">
+				<div class="checkout__container">
+					<ul class="checkout__breadcrumbs breadcrumbs">
+						<li class="breadcrumbs__item _icon-ch-right">
+							<a href="#" class="breadcrumbs__link">Home</a>
+						</li>
+						<li class="breadcrumbs__item _icon-ch-right">
+							<a href="#" class="breadcrumbs__link">My account</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<span class="breadcrumbs__current">Check out</span>
+						</li>
+					</ul>
+					<h2 class="checkout__title title title--info">Check Out</h2>
+
+					<div class="checkout__body">
+						<aside class="checkout__order order-checkout">
+							<h3 class="order-checkout__title">Order Summary</h3>
+							<div class="order-checkout__items">
+								<div class="order-checkout__item item-order ">
+									<a href="#" class="item-order__image">
+										<img src="img/cart/01.jpg" alt="image">
+									</a>
+									<div class="item-order__body">
+										<h4 class="item-order__title">
+											<a href="#">Blue Flower Print Crop Top <span>x 1</span></a>
+										</h4>
+										<div class="item-order__color">Color : <span>Yellow</span> </div>
+									</div>
+									<div class="item-order__price">$29.00</div>
+								</div>
+								<div class="order-checkout__item item-order ">
+									<a href="#" class="item-order__image">
+										<img src="img/cart/02.jpg" alt="image">
+									</a>
+									<div class="item-order__body">
+										<h4 class="item-order__title">
+											<a href="#">Levender Hoodie <span>x 2</span></a>
+										</h4>
+										<div class="item-order__color">Color : <span>Levender</span> </div>
+									</div>
+									<div class="item-order__price">$119.00</div>
+								</div>
+								<div class="order-checkout__item item-order ">
+									<a href="#" class="item-order__image">
+										<img src="img/cart/03.jpg" alt="image">
+									</a>
+									<div class="item-order__body">
+										<h4 class="item-order__title">
+											<a href="#">Black Sweatshirt <span>x 2</span></a>
+										</h4>
+										<div class="item-order__color">Color : <span>Black</span> </div>
+									</div>
+									<div class="item-order__price">$123.00</div>
+								</div>
+							</div>
+							<div class="order-checkout__totals totals-order">
+								<div class="totals-order__item">
+									<div class="totals-order__line">
+										<div class="totals-order__subtotal">Subtotal <span>( 3 items )</span></div>
+										<div class="totals-order__price">$513.00</div>
+									</div>
+									<div class="totals-order__line">
+										<div class="totals-order__savings">Savings</div>
+										<div class="totals-order__price">-$30.00</div>
+									</div>
+								</div>
+								<div class="totals-order__item">
+									<div class="totals-order__line">
+										<div class="totals-order__subtotal">Shipping</div>
+										<div class="totals-order__price">-$5.00</div>
+									</div>
+								</div>
+								<div class="totals-order__item">
+									<div class="totals-order__line">
+										<div class="totals-order__total">Total</div>
+										<div class="totals-order__price">$478.00</div>
+									</div>
+								</div>
+							</div>
+						</aside>
+						<div class="checkout__forms forms-checkout">
+							<h3 class="forms-checkout__title title-form">Billing Details</h3>
+							<form action="#" class="forms-checkout__form-billing form-billing">
+								<div class="form-billing__line">
+									<label for="name" class="form-billing__label">First Name*</label>
+									<input type="text" class="form-billing__input" name="name" id="name" autocomplete="off" placeholder="First Name">
+								</div>
+								<div class="form-billing__line">
+									<label for="last" class="form-billing__label">Last Name*</label>
+									<input type="text" class="form-billing__input" name="last" id="last" autocomplete="off" placeholder="Last Name">
+								</div>
+								<div class="form-billing__line">
+									<label for="country" class="form-billing__label">Country / Region*</label>
+									<input type="text" class="form-billing__input" name="country" id="country" autocomplete="off" placeholder="Country / Region">
+								</div>
+								<div class="form-billing__line">
+									<label for="company" class="form-billing__label">Company Name</label>
+									<input type="text" class="form-billing__input" name="company" id="company" autocomplete="off" placeholder="Company Name">
+								</div>
+								<div class="form-billing__line">
+									<label for="address" class="form-billing__label">Street Address*</label>
+									<input type="text" class="form-billing__input" name="address" id="address" autocomplete="off" placeholder="House number and street name">
+								</div>
+								<div class="form-billing__line">
+									<label for="apt" class="form-billing__label">Apt, suite, unit</label>
+									<input type="text" class="form-billing__input" name="apt" id="apt" autocomplete="off" placeholder="apartment, suite, unit, etc. (optional)">
+								</div>
+								<div class="form-billing__line form-billing__line--big">
+									<div class="form-billing__item">
+										<label for="toun" class="form-billing__label">City*</label>
+										<input class="form-billing__input" type="text" name="toun" id="toun" autocomplete="off" placeholder="Town / City">
+									</div>
+									<div class="form-billing__item">
+										<label for="state" class="form-billing__label">State*</label>
+										<select class="form-billing__select select-form" name="state" id="state" required="">
+											<option value disabled selected>State</option>
+											<option value="alabama">Alabama</option>
+											<option value="hawaii">Hawaii</option>
+											<option value="texas">Texas</option>
+										</select>
+									</div>
+									<div class="form-billing__item">
+										<label for="postal" class="form-billing__label">Postal Code*</label>
+										<input class="form-billing__input" type="number" name="postal" id="postal" autocomplete="off" placeholder="Postal Code">
+									</div>
+								</div>
+								<div class="form-billing__line">
+									<label for="tel" class="form-billing__label">Phone*</label>
+									<input type="number" class="form-billing__input" name="tel" id="tel" autocomplete="off" placeholder="Phone">
+								</div>
+								<div class="form-billing__line form-billing__line--button">
+									<button class="form-billing__button button">Continue to delivery</button>
+									<div class="form-billing__checkbox checkbox">
+										<input class="checkbox__check" type="checkbox" name="checkbox" id="check">
+										<label for="check">Save my information for a faster checkout</label>
+									</div>
+								</div>
+							</form>
+							<form action="#" class="forms-checkout__method method-form">
+								<div class="method-form__body">
+									<div class="method-form__item">
+										<div class="method-form__caption">
+											<h3 class="method-form__title title-form">Shipping Address</h3>
+											<div class="method-form__subtext">Select the address that matches your card or payment method.
+											</div>
+										</div>
+										<fieldset class="method-form__group group">
+											<div class="group__radio">
+												<input checked type="radio" name="shipping" id="adress-radio">
+												<label for="adress-radio">Same as Billing address</label>
+											</div>
+											<div class="group__radio">
+												<input type="radio" name="shipping" id="adress-radio-1">
+												<label for="adress-radio-1">Use a different shipping address</label>
+											</div>
+										</fieldset>
+									</div>
+									<div class="method-form__item">
+										<div class="method-form__caption">
+											<h3 class="method-form__title title-form">Shipping Method</h3>
+										</div>
+										<div class="method-form__group group">
+											<div class="group__info">
+												<p>Arrives by Monday, June 7</p>
+											</div>
+											<div class="group__info">
+												<div class="group__delivery">
+													<div class="group__delivery-charges">Delivery Charges</div>
+													<div class="group__value">$5.00</div>
+												</div>
+												<div class="group__additional">Additional fess may apply</div>
+											</div>
+										</div>
+									</div>
+									<div class="method-form__item">
+										<div class="method-form__caption">
+											<h3 class="method-form__title title-form">Payment Method</h3>
+											<div class="method-form__subtext">All transactions are secure and encrypted.Select the address that matches your card or payment method.
+											</div>
+										</div>
+
+										<fieldset class="method-form__group group">
+											<div class="group__radio">
+												<input checked type="radio" name="radio" id="card">
+												<label for="card">
+													<span>Credit Card
+														<span>We accept all major credit cards.</span>
+													</span>
+												</label>
+												<div class="group__card card">
+													<div class="card__images">
+														<div class="card__img">
+															<img src="img/checkout/googlePay.svg" alt="googlePay">
+														</div>
+														<div class="card__img">
+															<img src="img/checkout/visa.svg" alt="visa">
+														</div>
+														<div class="card__img">
+															<img src="img/checkout/paypal.svg" alt="paypal">
+														</div>
+														<div class="card__img">
+															<img src="img/checkout/paypass.svg" alt="paypass">
+														</div>
+													</div>
+													<div class="card__body">
+														<div class="card__line">
+															<input type="number" name="card-number" autocomplete="off" placeholder="Card number">
+														</div>
+														<div class="card__line">
+															<input type="text" name="name" autocomplete="off" placeholder="Name of card">
+														</div>
+														<div class="card__line">
+															<input type="number" name="date" autocomplete="off" placeholder="Expiration date (MM/YY)">
+														</div>
+														<div class="card__line">
+															<input type="number" name="Code" autocomplete="off" placeholder="Security Code">
+															<button type="button" class="card__button _icon-eye-border"></button>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="group__radio">
+												<input type="radio" name="radio" id="payment">
+												<label for="payment"><span>Cash on delivery
+														<span> Pay with cash upon delivery.</span>
+													</span>
+												</label>
+
+											</div>
+											<div class="group__radio">
+												<input type="radio" name="radio" id="paypol">
+												<label for="paypol"><span>Paypol</span></label>
+											</div>
+										</fieldset>
+
+									</div>
+								</div>
+								<button type="submit" class="method-form__button button">Pay Now</button>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<div data-spollers="991.98,max" class="footer__menu menu-footer">
+					<div class="menu-footer__block">
+						<h5 data-spoller>
+							<button type="button" class="menu-footer__title _icon-ch-down">Need Help</button>
+						</h5>
+						<div class="menu-footer__body ">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Contact Us</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Track Order</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Returns & Refunds</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">FAQ's</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Career</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-footer__block">
+						<h5 data-spoller>
+							<button type="button" class="menu-footer__title _icon-ch-down">Company</button>
+						</h5>
+						<div class="menu-footer__body ">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">About Us</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Euphoria Blog</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Euphoriastan</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Collaboration</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Media</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="menu-footer__block">
+						<h5 data-spoller>
+							<button type="button" class="menu-footer__title _icon-ch-down"> More Info</button>
+						</h5>
+						<div class="menu-footer__body ">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Term and Conditions</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Privacy Policy</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Shipping Policy</a>
+								</li>
+								<li class="menu-footer__item">
+									<a href="#" class="menu-footer__link">Sitemap</a>
+								</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="menu-footer__block">
+						<h5 data-spoller>
+							<button type="button" class="menu-footer__title _icon-ch-down"> Location</button>
+						</h5>
+						<div class="menu-footer__body ">
+							<ul class="menu-footer__list">
+								<li class="menu-footer__item">
+									<a href="mailto:support@euphoria.in" class="menu-footer__link">support@euphoria.in</a>
+								</li>
+								<li class="menu-footer__item">
+									Eklingpura Chouraha, Ahmedabad Main Road
+								</li>
+								<li class="menu-footer__item">
+									(NH 8- Near Mahadev Hotel) Udaipur, India- 313002
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="footer__body">
+					<div class="footer__social social-footer">
+						<ul class="social-footer__list">
+							<li class="social-footer__item"><a href="#" target="_blank" class="social-footer__link _icon-s-facebook"></a>
+							</li>
+							<li class="social-footer__item">
+								<a href="#" target="_blank" class="social-footer__link _icon-s-instagram"></a>
+							</li>
+							<li class="social-footer__item">
+								<a href="#" target="_blank" class="social-footer__link _icon-s-twitter"></a>
+							</li>
+							<li class="social-footer__item">
+								<a href="#" target="_blank" class="social-footer__link _icon-s-linkedin"></a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__download download-apps">
+						<h5 class="download-apps__title">Download The App</h5>
+						<div class="download-apps__items">
+							<a href="#" target="_blank" class="download-apps__link">
+								<img src="img/footer/google_play.svg" alt="Google play">
+							</a>
+							<a href="#" target="_blank" class="download-apps__link">
+								<img src="img/footer/app_story.svg" alt="Apple story">
+							</a>
+						</div>
+					</div>
+				</div>
+				<div data-spollers="10000,max" data-da="menu-footer, 6, 991.98" class="footer__categories popylar-categories">
+					<h5 data-spoller class="popylar-categories__title  ">
+						<button class="popylar-categories__button-title _icon-ch-down">Popular Categories</button>
+					</h5>
+					<div class="popylar-categories__body">
+						<ul class="popylar-categories__list">
+							<li class="popylar-categories__item">
+								<a href="#" class="popylar-categories__link">Men</a>
+							</li>
+							<li class="popylar-categories__item">
+								<a href="#" class="popylar-categories__link">Women</a>
+							</li>
+							<li class="popylar-categories__item">
+								<a href="#" class="popylar-categories__link">Joggers</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer__copy">Copyright © 2023 Euphoria Folks Pvt Ltd. All rights reserved.</div>
+			</div>
+		</footer>
+	</div>
+	<!-- Підключення swiper-->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<!-- Підключення JS-файлу з кодом -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>

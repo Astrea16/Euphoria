@@ -378,7 +378,7 @@
   overflow: clip;
   color: $dark;
   box-shadow: 0px toRem(4) toRem(4) 0px rgba(0, 0, 0, 0.25);
-  transition: box-shadow all 0.3s;
+  transition: all 0.3s;
   &::after {
     content: "";
     position: absolute;
@@ -649,14 +649,22 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(toRem(250), 1fr));
     @include adaptiveValue("gap", 50, 15);
+
     @media (max-width: toEm(1199.98)) {
       grid-template-columns: repeat(auto-fill, minmax(toRem(200), 1fr));
     }
+
     @media (max-width: toEm(991.98)) {
       grid-template-columns: repeat(auto-fill, minmax(toRem(180), 1fr));
+      &--similar {
+        grid-template-columns: repeat(auto-fill, minmax(toRem(210), 1fr));
+      }
     }
     @media (max-width: toEm(767.98)) {
       grid-template-columns: repeat(auto-fill, minmax(toRem(140), 1fr));
+      &--similar {
+        grid-template-columns: repeat(auto-fill, minmax(toRem(210), 1fr));
+      }
     }
   }
   &--gap {
@@ -731,6 +739,14 @@
       height: 100%;
       width: 100%;
       object-fit: contain;
+      transition: transform 0.3s;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        img {
+          transform: scale(1.05);
+        }
+      }
     }
   }
 }
@@ -805,7 +821,7 @@
     @extend %secondFont;
     @include adaptiveValue("font-size", 22, 18);
     font-weight: 500;
-    line-height: 1.2normal;
+    line-height: 1.2;
     letter-spacing: toRem(0.22);
   }
   // .slide-review__text

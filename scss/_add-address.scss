@@ -1,0 +1,120 @@
+.add-address {
+  // .add-address__container
+  &__container {
+  }
+  // .add-address__breadcrumbs
+  &__breadcrumbs {
+  }
+  // .add-address__body
+  &__body {
+    @media (min-width: toEm(767.98)) {
+      display: flex;
+      @include adaptiveValue("gap", 50, 15, 0, $containerWidth, 767.98);
+    }
+  }
+  // .add-address__account
+  &__account {
+    flex: 0 0 300px;
+  }
+  // .add-address__content
+  &__content {
+    flex: 1 1 auto;
+  }
+}
+
+.content-address {
+  // .content-address__title
+  &__title {
+    margin-bottom: toRem(20);
+  }
+  // .content-address__form
+  &__form {
+  }
+}
+.form-address {
+  display: flex;
+  column-gap: 4.5%;
+  flex-wrap: wrap;
+  @media (max-width: toEm(991.98)) {
+    column-gap: 2.5%;
+  }
+  @include adaptiveValue("row-gap", 30, 15, 0, $containerWidth, 767.98);
+  // .form-address__title
+  &__title {
+    @include adaptiveValue("margin-bottom", 50, 20);
+  }
+  // .form-address__line
+  &__line {
+    flex: 0 1 47.7%;
+    @media (max-width: toEm(549.98)) {
+      flex: 0 1 100%;
+    }
+    // .form-address__line--textarea
+    &--textarea {
+      flex: 0 1 100%;
+    }
+    // .form-address__line--checkbox
+    &--checkbox {
+      display: grid;
+      row-gap: toRem(15);
+      flex: 0 1 100%;
+    }
+  }
+  // label
+  &__label {
+    display: block;
+    color: $dark;
+    font-size: toRem(18);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: toRem(0.36);
+    margin-bottom: toRem(10);
+  }
+  // .form-address__input
+  input {
+    height: toRem(58);
+    background-color: $lightgray;
+    padding: 0 toRem(22);
+    border-radius: toRem(8);
+  }
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  // .form-address__select
+  &__select {
+    height: toRem(58);
+    font-size: toRem(16);
+  }
+  // .form-address__textarea
+  &__textarea {
+    width: 100%;
+    padding: toRem(22);
+    background-color: $lightgray;
+    border-radius: toRem(8);
+    resize: vertical;
+    height: toRem(150);
+  }
+  // .form-address__checkbox
+  &__checkbox {
+    label {
+      font-size: toRem(20);
+    }
+  }
+  // .form-address__buttons
+  &__buttons {
+    display: flex;
+    column-gap: toRem(30);
+  }
+  // .form-address__button
+  &__button {
+    padding: toRem(12) toRem(40);
+    font-weight: 700;
+  }
+}

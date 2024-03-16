@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>Sign in page</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header header--forms">
+			<div class="header__container">
+				<div class="header__left">
+					<a href="index.html"><img class="header__logo" src="img/header/logo.svg" alt="logo"></a>
+					<form action="#" class="header__search search-form">
+						<input class="search-form__input" type="text" name="search" placeholder="search">
+						<button class="search-form__button _icon-search"></button>
+					</form>
+				</div>
+				<div class="header__right right-header">
+
+					<select class="right-header__language language" name="list">
+						<option selected="" value="english">English (united States)</option>
+						<option value="english-british">English (British)</option>
+						<option value="german">German</option>
+						<option value="french">French</option>
+					</select>
+					<div class="right-header__buttons">
+						<button class="right-header__button button button--violet">Login</button>
+						<button class="right-header__button button button--white">Sign Up</button>
+					</div>
+
+				</div>
+				<button class="icon-menu"><span></span></button>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__sign-in sign-in">
+				<div class="sign-in__container">
+					<div class="sign-in__decor">
+						<div class="sign-in__image">
+							<img src="img/sign/01.jpg" alt="image">
+						</div>
+					</div>
+					<div class="sign-in__body">
+						<h2 class="sign-in__title">Sign In Page</h2>
+						<div class="sign-in__social social-sign-in">
+							<a href="#" class="social-sign-in__item social-sign-in__item--google">Continue With Google</a>
+							<a href="#" class="social-sign-in__item social-sign-in__item--twitter _icon-s-twitter"><span>Continue With Twitter</span></a>
+						</div>
+						<div class="sign-in__diveder">or</div>
+						<form action="#" class="sign-in__form form-sign-in">
+							<div class="form-sign-in__line">
+								<label for="name">User name or email address</label>
+								<input type="text" name="name" id="name" autocomplete="off" placeholder="name">
+							</div>
+							<div class="form-sign-in__line">
+								<label class="form-sign-in__space-between" for="passw">Password </label>
+								<button id="passw-1" class="form-sign-in__code _icon-eye-hide">Hide</button>
+								<input class="form-sign-in__input" type="password" name="passw" id="passw" autocomplete="off" value="23456819" minlength="4" maxlength="8" size="8">
+								<div class="form-sign-in__text form-sign-in__text--right">Forget your password</div>
+							</div>
+							<div class="form-sign-in__line">
+								<button type="submit" class="form-sign-in__button button button--violet">Sign In</button>
+								<div class="form-sign-in__text">Don’t have an account? <a href="#">Sign up</a> </div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+			</section>
+		</main>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
