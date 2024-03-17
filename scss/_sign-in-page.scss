@@ -1,0 +1,285 @@
+.sign-in {
+  position: relative;
+  max-width: toRem(1440);
+  margin: 0 auto;
+  // .sign-in__container
+  &__container {
+    display: flex;
+    @media (max-width: toEm(767.98)) {
+      flex-direction: column-reverse;
+    }
+  }
+  //.sign-in__decor
+  &__decor {
+    flex: 0 1 50%;
+  }
+  // .sign-in__image
+  &__image {
+    position: relative;
+    aspect-ratio: 694 / 956;
+
+    @media (min-width: toEm(767.98)) {
+      max-width: toRem(694);
+      margin-left: -16%;
+    }
+    @media (max-width: toEm(767.98)) {
+      margin: 0 toRem(-15);
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  // .sign-in__body
+  &__body {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: toRem(50);
+    @include adaptiveValue("row-gap", 50, 25, 0, $containerWidth, 767.98);
+    @include adaptiveValue("padding-top", 60, 20, 0, $containerWidth, 767.98);
+    @include adaptiveValue("padding-left", 23, 15, 2, $containerWidth, 767.98);
+    @media (max-width: toEm(767.98)) {
+      padding-left: toRem(0);
+      padding-bottom: toRem(30);
+    }
+  }
+  //.sign-in__capition
+  &__capition {
+    display: grid;
+    row-gap: toRem(10);
+  }
+  // .sign-in__title
+  &__title {
+    color: #333;
+    @extend %secondFont;
+    @include adaptiveValue("font-size", 34, 28, 0, $containerWidth, 767.98);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: toRem(0.68);
+    text-transform: capitalize;
+  }
+  //.sign-in__subtext
+  &__subtext {
+    color: rgba(102, 102, 102, 0.8);
+    font-weight: 500;
+    line-height: 1.2;
+    p {
+      &:not(:last-child) {
+        margin-bottom: toRem(10);
+      }
+      a {
+        border-bottom: toRem(1) solid transparent;
+        color: $violet;
+        transition: border-bottom-color 0.3s;
+        @media (any-hover: hover) {
+          &:hover {
+            border-bottom-color: $violet;
+          }
+        }
+      }
+    }
+  }
+
+  // .sign-in__social
+  &__social {
+  }
+  // .sign-in__diveder
+  &__diveder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: toRem(23);
+    color: #666;
+    @extend %secondFont;
+    font-size: toRem(18);
+    text-transform: uppercase;
+    &::before,
+    &::after {
+      content: "";
+      width: 100%;
+      height: toRem(2);
+      background-color: rgba(102, 102, 102, 0.25);
+    }
+  }
+  // .sign-in__text
+  &__text {
+    @extend .form-sign-in__text;
+  }
+}
+
+.social-sign-in {
+  display: grid;
+  row-gap: toRem(20);
+  // .social-sign-in__item
+  &__item {
+    display: flex;
+    column-gap: toRem(12);
+    padding: toRem(16) toRem(20);
+    color: $violet;
+    justify-content: center;
+    @include adaptiveValue("font-size", 22, 18);
+    font-weight: 500;
+    line-height: 1.18;
+    border-radius: 8px;
+    border: toRem(1) solid $dark;
+    transition: all 0.3s;
+    &--google::before {
+      flex: 0 0 20px;
+      content: "";
+      width: 20px;
+      height: 20px;
+      -webkit-transition: background 0.5s;
+      transition: background 0.5s;
+      background: url("../img/sign/google.svg") center / cover no-repeat;
+    }
+    &--twitter::before {
+      color: #47acdf;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        border-color: $violet;
+        box-shadow: inset 0 0 5px $violet;
+      }
+    }
+  }
+}
+.form-sign-in {
+  display: grid;
+  @include adaptiveValue("row-gap", 30, 20, 0, $containerWidth, 767.98);
+  color: $dark;
+  //.form-sign-in__line
+  &__line {
+    position: relative;
+    & > * {
+      &:not(:last-child) {
+        margin-bottom: toRem(10);
+      }
+    }
+  }
+  label {
+    font-size: toRem(18);
+    display: flex;
+    text-transform: capitalize;
+  }
+  input {
+    height: toRem(58);
+    width: 100%;
+    padding: toRem(16) toRem(20);
+    border-radius: toRem(8);
+    border: toRem(1) solid $dark;
+    font-size: toRem(22);
+    &::placeholder {
+      font-size: toRem(14);
+    }
+  }
+  // .form-sign-in__space-between
+  &__space-between {
+    justify-content: space-between;
+  }
+  //. form-sign-in__code
+  &__code {
+    display: flex;
+    align-items: center;
+    column-gap: toRem(15);
+    color: $gray;
+    position: absolute;
+    right: 0;
+    top: 0;
+    &--new {
+      position: absolute;
+      right: 0;
+
+      padding: toRem(20) toRem(20);
+    }
+  }
+  // .form-sign-in__text
+  &__text {
+    &--right {
+      text-align: right;
+    }
+    //.form-sign-in__text--letter-spacing
+    &--letter-spacing {
+      letter-spacing: toRem(0.32);
+    }
+    a {
+      border-bottom: toRem(1) solid $dark;
+      transition: all 0.3s;
+
+      @media (any-hover: hover) {
+        &:hover {
+          color: $violet;
+          border-color: transparent;
+        }
+      }
+    }
+  }
+  a {
+    border-bottom: toRem(1) solid $dark;
+    transition: all 0.3s;
+
+    @media (any-hover: hover) {
+      &:hover {
+        color: $violet;
+        border-color: transparent;
+      }
+    }
+  }
+  // .form-sign-in__button
+  &__button {
+    min-width: toRem(167);
+    @media (max-width: toEm(479.98)) {
+      width: 100%;
+    }
+  }
+  //.form-sign-in__error
+  &__error {
+    color: $red;
+  }
+  // .form-sign-in__checkbox
+  &__checkbox {
+    position: relative;
+    input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      opacity: 0;
+    }
+    label {
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      cursor: pointer;
+      column-gap: 10px;
+      row-gap: 5px;
+      line-height: 1.2;
+
+      &::before {
+        content: "";
+        flex: 0 0 18px;
+        width: 18px;
+        height: 18px;
+        border: 1px solid $dark;
+        border-radius: 3px;
+      }
+      @media (max-width: 474.98px) {
+        font-size: 16px;
+      }
+    }
+  }
+  input:checked + label::before {
+    background: url("../img/sign/checkbox.svg") center / cover no-repeat;
+  }
+}
+.page__check-email {
+  .form-sign-in__text::before {
+    font-size: toRem(13);
+    margin-right: toRem(10);
+  }
+}
